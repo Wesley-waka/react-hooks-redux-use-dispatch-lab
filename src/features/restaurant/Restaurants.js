@@ -5,7 +5,7 @@ function Restaurants() {
   const restaurants = useSelector((state) => state.restaurants);
 
   return (
-    <div>
+    <div>{restaurants.length}
       <ul>
         {restaurants.map((restaurant) => (
           <li key={restaurant.name}>{restaurant.name}</li>
